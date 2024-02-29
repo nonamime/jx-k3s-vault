@@ -35,5 +35,5 @@ spec:
   repository: bucketrepo
   secretStorage: vault
   vault:
-    url: upright-fire:8200
+    url: http://127.0.0.1:8200
   webhook: lighthouse
