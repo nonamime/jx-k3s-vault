@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         nonamime/jx-k3s-vault: true
+        nonamime/test: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         nonamime/jx-k3s-vault: merge
+        nonamime/test: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - nonamime/jx-k3s-vault
+        - nonamime/test
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - nonamime/jx-k3s-vault
+        - nonamime/test
       target_url: http://lighthouse.jx.45.139.226.89.nip.io/merge/status
 kind: ConfigMap
 metadata:
